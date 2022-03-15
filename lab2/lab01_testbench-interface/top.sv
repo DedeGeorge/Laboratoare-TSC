@@ -13,37 +13,28 @@ module top;
   logic test_clk;
 
   // interconnecting signals
-  logic          load_en;
-  logic          reset_n;
-  opcode_t       opcode;
-  operand_t      operand_a, operand_b;
-  address_t      write_pointer, read_pointer;
-  instruction_t  instruction_word;
+  //logic          load_en;
+  //logic          reset_n;
+  //opcode_t       opcode;
+  //operand_t      operand_a, operand_b;
+  //address_t      write_pointer, read_pointer;
+  //instruction_t  instruction_word;
+   tb_ifc interfata_lab(.clk(test_clk));
 
   // instantiate testbench and connect ports
-  instr_register_test test (
-    .clk(test_clk),
-    .load_en(load_en),
-    .reset_n(reset_n),
-    .operand_a(operand_a),
-    .operand_b(operand_b),
-    .opcode(opcode),
-    .write_pointer(write_pointer),
-    .read_pointer(read_pointer),
-    .instruction_word(instruction_word)
-   );
+  instr_register_test test (.interfata_lab(interfata_lab));
 
   // instantiate design and connect ports
   instr_register dut (
     .clk(clk),
-    .load_en(load_en),
-    .reset_n(reset_n),
-    .operand_a(operand_a),
-    .operand_b(operand_b),
-    .opcode(opcode),
-    .write_pointer(write_pointer),
-    .read_pointer(read_pointer),
-    .instruction_word(instruction_word)
+    .load_en(interfata_lab.load_en),
+    .reset_n(interfata_lab.reset_n),
+    .operand_a(interfata_lab.operand_a),
+    .operand_b(interfata_lab.operand_b),
+    .opcode(interfata_lab.opcode),
+    .write_pointer(interfata_lab.write_pointer),
+    .read_pointer(interfata_lab.read_pointer),
+    .instruction_word(interfata_lab.instruction_word)
    );
 
   // clock oscillators

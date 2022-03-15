@@ -9,7 +9,12 @@ interface tb_ifc (input logic clk);
   import instr_register_pkg::*;
 
   // ADD CODE TO DECLARE THE INTERFACE SIGNALS
-
+  logic          load_en;
+  logic          reset_n;
+  opcode_t       opcode;
+  operand_t      operand_a, operand_b;
+  address_t      write_pointer, read_pointer;
+  instruction_t  instruction_word;
 
 endinterface: tb_ifc
 
