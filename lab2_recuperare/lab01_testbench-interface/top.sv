@@ -36,6 +36,7 @@ module top;
     .read_pointer(interfata_lab.read_pointer),
     .instruction_word(interfata_lab.instruction_word)
    );
+   
 
   // clock oscillators
   initial begin
