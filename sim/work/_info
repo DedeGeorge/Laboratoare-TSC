@@ -1,0 +1,107 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\User\Desktop\lab2\sim
+vinstr_register
+Z1 Mx1 6 sv_std 3 std
+Z2 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+Z3 Mx2 4 work 18 instr_register_pkg
+Z4 DXx4 work 18 instr_register_pkg 0 22 :TlA:Ad]<ZnbmIAXVL1]Q0
+V3z9A3Eb_VM7O2iR_@`ig80
+r1
+!s85 0
+31
+I[U74SCAO;KJDBHY;K@XB<2
+S1
+Z5 dC:\Users\User\Desktop\lab2\sim
+w1647362547
+8../lab_dut/instr_register.sv
+F../lab_dut/instr_register.sv
+L0 9
+Z6 OE;L;6.6d;45
+Z7 o-sv -work work -L mtiAvm -L mtiOvm -L mtiUPF
+Z8 !s92 -sv -work work +incdir+../../lab_dut +incdir+../../lab_dut +incdir+../lab01_testbench-interface -L mtiAvm -L mtiOvm -L mtiUPF
+!s100 hn3_Wza;blUEWcPfei=700
+!s105 instr_register_sv_unit
+Xinstr_register_pkg
+R1
+R2
+V:TlA:Ad]<ZnbmIAXVL1]Q0
+r1
+31
+I:TlA:Ad]<ZnbmIAXVL1]Q0
+S1
+R5
+w1647362553
+8../lab_dut/instr_register_pkg.sv
+F../lab_dut/instr_register_pkg.sv
+L0 5
+R6
+R7
+R8
+!s85 0
+!s100 CT>20gG0]oZl8PGJ6@31Y0
+vinstr_register_test
+R1
+R2
+R3
+R4
+VEBCnBoI9@;K2I3Z?DhHY42
+r1
+31
+Imz3;Gz1a3f1M;52W1W5i81
+S1
+R5
+w1647362870
+8../lab01_testbench-interface/instr_register_test.sv
+F../lab01_testbench-interface/instr_register_test.sv
+L0 8
+R6
+R7
+R8
+!s85 0
+!s100 J]1ba_AWGe6<Fo>i9bi3^1
+!s105 instr_register_test_sv_unit
+Ytb_ifc
+R1
+R2
+R3
+R4
+V[2MM;6bj4cE27ld353ZQ90
+r1
+31
+IV9MoMjz5fYXVbO8QLKTj00
+S1
+R5
+w1647361734
+8../lab01_testbench-interface/tb_ifc.sv
+F../lab01_testbench-interface/tb_ifc.sv
+L0 5
+R6
+R7
+R8
+!s85 0
+!s100 @5]5f`eE4kCe9C6Qe@ZFm1
+!s105 tb_ifc_sv_unit
+vtop
+R1
+R2
+R3
+R4
+Ve:gFW1CKLAXc^T:7k2HoD1
+r1
+31
+IF<5dDTTHRiC7ZQJb4]:@F2
+S1
+R5
+w1647361496
+8../lab01_testbench-interface/top.sv
+F../lab01_testbench-interface/top.sv
+L0 5
+R6
+R7
+R8
+!s85 0
+!s100 Dh7:P:@Jk8MEe;W5X[kbi3
+!s105 top_sv_unit
