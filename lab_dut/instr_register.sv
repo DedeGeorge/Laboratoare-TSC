@@ -30,12 +30,12 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
     end
     else if (load_en) begin
       case (opcode)
-        ADD : iw_reg[write_pointer] = '{opcode, operand_a, $signed(operand_a + operand_b};
-        SUB : iw_reg[write_pointer] = '{opcode, operand_a, $signed(operand_a - operand_b};
-        MULT: iw_reg[write_pointer] = '{opcode, operand_a, $signed(operand_a * operand_b};
-        DIV : iw_reg[write_pointer] = '{opcode, operand_a, $signed(operand_a / operand_b};
-        MOD: iw_reg[write_pointer] = '{opcode, operand_a, $signed(operand_a % operand_b};
-      default: iw_reg[write_pointer] = '{opcode, operand_a, operand_b, 'b0};
+        ADD : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a + operand_b};
+        SUB : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a - operand_b};
+        MULT: iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a * operand_b};
+        DIV : iw_reg[write_pointer] = '{opcode, operand_a, operand_b, $signed(operand_a / operand_b};
+        MOD: iw_reg[write_pointer]  =  '{opcode, operand_a,  operand_b, $signed(operand_a % operand_b};
+      default: iw_reg[write_pointer] =  '{opcode, operand_a, operand_b, 'b0};
       endcase
     end
 
